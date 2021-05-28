@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 15px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background: var(--primary-color);
+  transition: 200ms ease-in-out;
+}
+.btn:hover {
+  background: var(--pastel-lemon-color);
+  color: var(--dark-color);
+}
