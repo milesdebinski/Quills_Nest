@@ -29,6 +29,19 @@ body {
   color: var(--dark-color);
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 312%;
+  background: rgba(255, 255, 255, 0.705);
 }
 p {
   padding: 0px 40px;
@@ -133,25 +146,35 @@ ul {
 .waves {
   display: flex;
   position: relative;
-  margin-bottom: -65px;
+  margin-bottom: 0px;
   /* justify-content: flex-start; */
   align-items: flex-start;
   gap: 100px;
+  margin-top: 60px;
 }
 .waves .svg_waves {
+  transform: rotate(180deg);
+  height: 20px;
   width: 100%;
-  fill: var(--primary-color);
-  /* stroke: rgb(255, 195, 56); */
-  /* stroke-width: 5px; */
-  /* z-index: -2; */
-  /* box-shadow: 0px 0px 15px 8px rgba(34, 34, 34, 0.5); */
+  fill: #ffffff;
+  /* fill-rule: evenodd; */
+  /* fill-opacity: 0.5; */
+
+  background-color: #1e4949;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 /* Section - Info */
 .info {
   display: flex;
   max-width: 100%;
   height: 600px;
-  background: var(--primary-color);
+  /* background: rgb(30, 73, 73); */
+  /* background: var(--primary-color); */
+  background-color: #1e4949;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -186,6 +209,7 @@ ul {
   justify-content: center;
   align-items: center;
   background: var(--light-green-color);
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
   min-height: 750px;
 }
 .blog .blog_left {
@@ -261,5 +285,6 @@ footer .waves {
 }
 footer .footer_info {
   background: var(--primary-color);
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
   height: 200px;
 }
