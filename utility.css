@@ -6,10 +6,10 @@
 }
 .btn {
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
   display: inline-block;
-  padding: 15px 40px;
-  margin: 20px 40px;
+  padding: 18px 30px;
+  margin: 30px 40px;
   text-align: center;
   color: #fff;
   border: none;
@@ -20,6 +20,13 @@
 .btn:hover {
   background: var(--pastel-lemon-color);
   color: var(--dark-color);
+}
+.btn_reverse {
+  background: var(--light-green-color);
+  color: var(--dark-color);
+}
+.btn_reverse:hover {
+  background: var(--pastel-lemon-color);
 }
 .page_wrap {
   margin-top: -20px;
