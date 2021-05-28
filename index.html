@@ -6,32 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="media.css">
     <script src="https://kit.fontawesome.com/52d81d373d.js"
       crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Quill's Nest</title>
   </head>
   <body>
-
-
-
-
 
     <div class="container">
       <div class="navbar">
         <!-- header -->
         <div class="header">
           <p class="welcome">welcome to</p>
-          <h1 class="logo">Quill's Nest <i class="fas fa-feather-alt"></i></h1>
+          <h1 class="logo">Quill's Nest </h1>
           <p>MAKE YOUR JOURNAL AWESOME</p>
         </div>
         <!-- navbar -->
         <ul>
-          <li><a class="current" href="home"><img src="./img/homeQ.png"><span>HOME</span></a></li>
-          <li><a href="about"><img src="./img/aboutQ2.png"><span>ABOUT</span></a></li>
-          <li><a href="stickers"><img
+          <li class="link_home"><a class="current" href="home"><img
+                src="./img/homeQ.png"><span>HOME</span></a></li>
+          <li class="link_about"><a href="about"><img src="./img/aboutQ2.png"><span>ABOUT</span></a></li>
+          <li class="link_blog"><a href="stickers"><img
                 src="./img/blogQ.png"><span>BLOG</span></a></li>
-          <li><a href="stickers"><img
+          <li class="link_stickers"><a href="stickers"><img
                 src="./img/stickerQ.png"><span>STICKERS</span></a></li>
         </ul>
       </div>
@@ -39,7 +37,6 @@
         <div class="page_wrap">
 
           <div class="waves">
-
             <svg class="svg_waves">
               <path d="M 0 60 q 10 0 20 -10 q 20 -20 40 0 q 20 20 40 0 q 20
                 -20
@@ -60,17 +57,21 @@
               </svg>
             </div>
           </div>
+
           <div class="page_shadow">
             <section class="info">
               <div class="info_left">
-                <h2>Lorem ipsum dolor sit amet.</h2>
+                <h2>Intro to Quill's Nest</h2>
+                <h3>My love for making journals</h3>
                 <p>Lorem ipsum dolor sit amet consectetur
                   adipisicing elit. Voluptate ad unde, pariatur excepturi quod
-                  officiis obcaecati sapiente quibusdam architecto? Sequi iusto,
-                  tenetur amet rerum assumenda a blanditiis reiciendis hic
-                  suscipit!</p></div>
+                  officiis obcaecati sapiente quibusdam architecto? <br><br>Lorem
+                  ipsum dolor sit amet consectetur, adipisicing elit. Quam sed
+                  odit doloremque! Fuga dignissimos praesentium, aliquam eos quo
+                  eaque minima dicta dolor quas perferendis non. Odio illo in
+                  obcaecati aperiam?</p></div>
               <div class="info_right">
-                <img src="./img/september.png" alt="">
+                <img src="./img/belong.png" alt="">
               </div>
             </section>
             <section class="blog">
@@ -88,7 +89,7 @@
                   ea
                   molestias ullam quae tempore animi, expedita
                   recusandae nobis officia itaque nemo vero... </p>
-                <a href="" class="btn">READ MORE</a>
+                <a href="" class="btn">Read more</a>
               </div>
 
             </section>
@@ -98,20 +99,47 @@
             <div class="flex_stickers">
               <div class="item item_1">
                 <img src="./img/july.png" alt="">
-                <h3>July</h3>
+                <!-- <h3>July</h3> -->
               </div>
               <div class="item item_2">
                 <img src="./img/November.png" alt="">
-                <h3>November</h3>
+                <!-- <h3>November</h3> -->
               </div>
               <div class="item item_3">
                 <img src="./img/september.png" alt="">
-                <h3>September</h3>
+                <!-- <h3>September</h3> -->
               </div>
             </div>
           </section>
 
-          <footer></footer>
+          <footer>
+            <div class="waves">
+              <svg class="svg_waves">
+                <path d="M 0 60 q 10 0 20 -10 q 20 -20 40 0 q 20 20 40 0 q 20
+                  -20
+                  40 0 q 20 20 40 0 q 20 -20 40 0 q 20 20 40 0 q 20 -20 40 0 q
+                  20
+                  20 40 0 q 20 -20 40 0 q 20 20 40 0 q 20 -20 40 0 q 20 20 40 0
+                  q
+                  20 -20 40 0 q 20 20 40 0 q 20 -20 40 0 q 20 20 40 0 q 20 -20
+                  40
+                  0 q 20 20 40 0 q 20 -20 40 0 q 20 20 40 0 q 20 -20 40 0 q 20
+                  20
+                  40 0 q 20 -20 40 0 q 20 20 40 0 q 20 -20 40 0 q 20 20 40 0 q
+                  20
+                  -20 40 0 q 20 20 40 0 q 20 -20 40 0 q 20 20 40 0 q 20 -20 40 0
+                  q
+                  10 10 20 10 l 0 50 l -1280 0 z"
+                  />
+                </svg>
+              </div>
+              <div class="page_shadow">
+                <div class="footer_info">
+
+                </div>
+              </div>
+            </footer>
+          </div>
         </div>
       </div>
     </body>

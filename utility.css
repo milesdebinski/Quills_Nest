@@ -8,7 +8,7 @@
   cursor: pointer;
   display: inline-block;
   padding: 10px 20px;
-  margin: 15px;
+  margin: 20px 40px;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -19,3 +19,13 @@
   background: var(--pastel-lemon-color);
   color: var(--dark-color);
 }
+.page_wrap {
+  margin-top: -20px;
+}
+.page_shadow {
+  box-shadow: 2px 2px 5px 1px rgba(34, 34, 34, 0.5);
+}
+
+/* STICKERSSSS */
+/* --- */
+/* https://codepen.io/lcdsantos/pen/yaYYqB */

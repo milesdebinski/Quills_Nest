@@ -1,0 +1,17 @@
+@media (max-width: 850px) {
+  .navbar ul {
+    gap: 55px;
+  }
+}
+@media (min-width: 950px) {
+  .navbar .header {
+    padding: 30px 0px 10px 0px;
+  }
+  .navbar ul {
+    position: absolute;
+    gap: 55px;
+  }
+  .navbar ul li.link_about {
+    padding-right: 400px;
+  }
+}
