@@ -133,7 +133,7 @@ ul {
 .waves {
   display: flex;
   position: relative;
-  margin-bottom: -90px;
+  margin-bottom: -65px;
   /* justify-content: flex-start; */
   align-items: flex-start;
   gap: 100px;
