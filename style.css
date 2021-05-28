@@ -214,10 +214,14 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 500px;
-  margin: 80px 0px;
+  height: 600px;
+  margin: 90px 0px 50px 0px;
+  gap: 50px;
 }
 .stickers h2 {
+  align-self: center;
+}
+.stickers a {
   align-self: center;
 }
 .stickers .flex_stickers {
