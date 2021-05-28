@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Rochester&display=swap");
 :root {
   --primary-color: #1e4949;
   --pastel-blue-color: #0b2c4a;
@@ -16,6 +13,12 @@
 
   --test-color: #f53145;
   --shadow-color: rgba(0, 0, 0, 0.7);
+
+  --texture-dark: url("./img/texture_dark.png");
+  --texture-bright: url("./img/texture_bright.png");
+  --texture-body: url("./img/texture_body.png");
+
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 * {
@@ -27,15 +30,14 @@
 body {
   line-height: 1.2;
   color: var(--dark-color);
-  font-family: "Raleway", sans-serif;
+
   font-size: 1.2rem;
 }
 
 .background {
   position: relative;
   background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
-
+  background-image: var(--texture-body);
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 .background::before {
@@ -45,10 +47,17 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.705);
+  background: rgba(255, 255, 255, 0.527);
+
+  /* transform: translateY(100px); */
+  /* z-index: -1; */
 }
 p {
   padding: 0px 40px;
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 300;
+  font-size: 1rem;
 }
 img {
   /* max-width: 300px; */
@@ -60,17 +69,21 @@ h3 {
   padding: 0px 40px;
 }
 h1 {
-  font-family: "Sacramento", cursive;
+  /* font-family: "Sacramento", cursive;
+   */
+  font-family: "Rochester", cursive;
   font-size: 4rem;
 }
 h2 {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 500;
+  font-family: "Rochester", cursive;
 }
 h3 {
   font-size: 2rem;
   line-height: 1.5;
   font-weight: 600;
+  font-family: "Amatic SC", cursive;
 }
 a {
   text-decoration: none;
@@ -114,7 +127,9 @@ ul {
 }
 
 .navbar ul li a {
-  font-family: "Kalam", cursive;
+  font-family: "Amatic SC", cursive;
+  font-weight: 1000;
+  font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,27 +178,39 @@ ul {
   fill: #ffffff;
   /* fill-rule: evenodd; */
   /* fill-opacity: 0.5; */
-
-  background-color: #1e4949;
-  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
-
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  /* background: var(--content-color); */
+  background: var(--primary-color);
+  background-image: var(--texture-dark);
 }
 /* Section - Info */
 .info {
   display: flex;
   max-width: 100%;
-  height: 600px;
+  height: 500px;
   /* background: rgb(30, 73, 73); */
   /* background: var(--primary-color); */
-  background-color: #1e4949;
-  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background: var(--primary-color);
+  background-image: var(--texture-dark);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
+/* .info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #0d4444;
+  opacity: 0.7;
+  z-index: 0;
+}
+.info > * {
+  z-index: 2;
+} */
 
 .info .info_left {
   /* color: var(--pastel-peach-color);
@@ -218,9 +245,19 @@ img.item.show {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--light-green-color);
-  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
-  min-height: 750px;
+  background-color: var(--light-green-color);
+  background-image: url("https://www.transparenttextures.com/patterns/paper-3.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  min-height: 500px;
+}
+.blog .stickit {
+  position: absolute;
+  transform: rotate(-45deg);
+  z-index: 2;
+  left: 20px;
+  top: 590px;
+  max-width: 140px;
+  /* box-shadow: 1px 1px 1px 1px #000/; */
 }
 .blog .blog_left {
   flex: 1;
@@ -231,7 +268,7 @@ img.item.show {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  box-shadow: 1px 1px 10px 1px rgba(34, 34, 34, 0.5);
+  box-shadow: 1px 3px 3px 0px rgba(34, 34, 34, 0.5);
 
   opacity: 0;
   transform: translate(-55px, 0px);
@@ -303,6 +340,6 @@ footer .waves {
 }
 footer .footer_info {
   background: var(--primary-color);
-  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  background-image: var(--texture-dark);
   height: 200px;
 }

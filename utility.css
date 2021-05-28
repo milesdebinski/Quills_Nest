@@ -5,29 +5,31 @@
   padding: 0 20px;
 }
 .btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
   display: inline-block;
-  padding: 18px 30px;
+  /* padding: 18px 30px; */
+  padding: 15px 15px;
   margin: 30px 40px;
   text-align: center;
   color: #fff;
   border: none;
-  border-radius: 40px;
+  border-radius: 5px;
+
   background: var(--primary-color);
   transition: 200ms ease-in-out;
 }
 .btn:hover {
-  background: var(--pastel-lemon-color);
-  color: var(--dark-color);
+  background: var(--test-color);
+  color: var(--pastel-peach-color);
 }
 .btn_reverse {
   background: var(--light-green-color);
   color: var(--dark-color);
 }
-.btn_reverse:hover {
-  background: var(--pastel-lemon-color);
-}
+
 .page_wrap {
   margin-top: -20px;
 }

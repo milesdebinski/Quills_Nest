@@ -12,6 +12,9 @@
     gap: 55px;
   }
   .navbar ul li.link_about {
-    padding-right: 400px;
+    padding-right: 250px;
+  }
+  .navbar ul li.link_blog {
+    padding-left: 230px;
   }
 }
