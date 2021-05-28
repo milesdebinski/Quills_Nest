@@ -31,7 +31,7 @@ body {
   font-size: 1.2rem;
 }
 p {
-  padding: 0px 20px;
+  padding: 0px 40px;
 }
 img {
   /* max-width: 300px; */
@@ -40,7 +40,7 @@ img {
 h1,
 h2,
 h3 {
-  padding: 0px 20px;
+  padding: 0px 40px;
 }
 h1 {
   font-family: "Sacramento", cursive;
@@ -171,7 +171,7 @@ ul {
 .info .info_right {
   flex: 1;
   margin-bottom: -5px;
-  padding: 40px;
+  padding-right: 40px;
 }
 .info .info_right img {
   width: 100%;
@@ -191,7 +191,7 @@ ul {
 .blog .blog_left {
   flex: 1;
   margin-bottom: -5px;
-  padding: 40px;
+  padding-left: 40px;
 }
 .blog .blog_left img {
   width: 100%;
